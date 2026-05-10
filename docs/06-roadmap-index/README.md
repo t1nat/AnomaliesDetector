@@ -4,13 +4,13 @@ This project uses the roadmap as the high-level schedule and the other docs as t
 
 ## Best Reading Order
 
-1. [Project Brief](./00-overview/project-brief.md)
-2. [System Architecture](./01-architecture/system-architecture.md)
-3. [Data Model](./02-data-model/database-schema.md)
-4. [Implementation Plan](./03-development-plan/implementation-plan.md)
-5. [Validation Plan](./04-testing/validation-plan.md)
-6. [Operations Runbook](./05-operations/runbook.md)
-7. [Roadmap](./roadmap.md)
+1. [Project Brief](../00-overview/project-brief.md)
+2. [System Architecture](../01-architecture/system-architecture.md)
+3. [Data Model](../02-data-model/database-schema.md)
+4. [Implementation Plan](../03-development-plan/implementation-plan.md)
+5. [Validation Plan](../04-testing/validation-plan.md)
+6. [Operations Runbook](../05-operations/runbook.md)
+7. [Roadmap](../roadmap.md)
 
 ## How to Use the Docs
 

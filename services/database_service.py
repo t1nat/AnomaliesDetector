@@ -100,6 +100,12 @@ class DatabaseService:
         rows = self._connection.execute("SELECT id, ip_address, device_type, is_blacklisted, first_seen, last_seen, packet_count FROM devices WHERE is_blacklisted = 1 ORDER BY id").fetchall()
         return [self._device_from_row(row) for row in rows]
 
+    def get_all_devices(self) -> list[Device]:
+        rows = self._connection.execute(
+            "SELECT id, ip_address, device_type, is_blacklisted, first_seen, last_seen, packet_count FROM devices ORDER BY id"
+        ).fetchall()
+        return [self._device_from_row(row) for row in rows]
+
     def get_packets_by_ip(self, source_ip: str) -> list[NetworkPacket]:
         rows = self._connection.execute("SELECT id, source_ip, dest_ip, protocol, size, port, timestamp, device_id FROM packets WHERE source_ip = ? ORDER BY id", (source_ip,)).fetchall()
         return [
@@ -118,6 +124,16 @@ class DatabaseService:
 
     def get_device_id_by_ip(self, ip_address: str) -> int:
         return self._get_device_id(ip_address)
+
+    def clear_all(self) -> None:
+        self._connection.executescript(
+            """
+            DELETE FROM anomalies;
+            DELETE FROM packets;
+            DELETE FROM devices;
+            """
+        )
+        self._connection.commit()
 
     def _create_tables(self) -> None:
         self._connection.executescript(
