@@ -12,4 +12,5 @@ class Device:
     first_seen: datetime = field(default_factory=lambda: datetime.now(timezone.utc))
     last_seen: datetime = field(default_factory=lambda: datetime.now(timezone.utc))
     packet_count: int = 0
+    anomaly_count: int = 0
     id: int | None = None

@@ -27,6 +27,9 @@ def main() -> None:
     def persist_and_log_anomaly(anomaly) -> None:
         logger.log_anomaly(anomaly)
         database.save_anomaly(anomaly)
+        # Increment device anomaly count
+        if anomaly.packet_id:
+            database.increment_device_anomaly_count(anomaly.packet_id)
 
     event_manager.subscribe_anomaly_detected(persist_and_log_anomaly)
     event_manager.subscribe_ddos_suspected(logger.log_ddos_suspected)

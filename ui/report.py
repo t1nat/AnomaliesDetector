@@ -49,14 +49,15 @@ def _build_device_table(database: DatabaseService) -> Table:
     table.add_column("IP Address", style=STYLE_INFO)
     table.add_column("Device Type", style=STYLE_INFO)
     table.add_column("Blacklisted", style=STYLE_INFO)
-    table.add_column("Packet Count", style=STYLE_INFO)
+    table.add_column("Packets", style=STYLE_INFO)
+    table.add_column("Anomalies", style=STYLE_INFO)
     table.add_column("First Seen", style=STYLE_MUTED)
     table.add_column("Last Seen", style=STYLE_MUTED)
 
     devices = database.get_all_devices()
 
     if not devices:
-        table.add_row("-", "-", "-", "-", "-", "No devices stored yet", "-")
+        table.add_row("-", "-", "-", "-", "-", "-", "No devices stored yet", "-")
         return table
 
     for device in devices:
@@ -66,6 +67,7 @@ def _build_device_table(database: DatabaseService) -> Table:
             device.device_type,
             "yes" if device.is_blacklisted else "no",
             str(device.packet_count),
+            str(device.anomaly_count),
             _format_datetime(device.first_seen),
             _format_datetime(device.last_seen),
         )
