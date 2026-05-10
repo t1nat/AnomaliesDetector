@@ -45,23 +45,49 @@ NetworkAnomalyDetector/
 
 ---
 
-### Week 1 — Analysis & Design ✅
+### Week 1 — Project Initialization & Design ✅
 
-**Goal:** Plan the system before writing any code.
+**Objective:** Establish the project foundation before implementation begins. By the end of Week 1, the system scope, architecture, data model, and delivery plan should be clear enough that development can start without rework.
+
+**Build Plan:**
+1. Define the problem statement and success criteria for the network anomaly detector.
+2. Confirm the core feature set: traffic simulation, anomaly detection, event notifications, logging, and SQLite persistence.
+3. Map the project structure into folders, modules, and responsibilities.
+4. Design the data model for packets, anomalies, and devices.
+5. Document the detection strategy for the first release:
+  - rule-based detection for DDoS, port scans, and unusual packet sizes
+  - Z-score analysis reserved for the later statistical layer
+6. Prepare example traffic scenarios that will be used to validate the first implementation.
+7. Decide the initial development order so the codebase can be built in small, testable increments.
 
 **Deliverables:**
 - [x] Project idea and description
+- [x] Scope and success criteria
 - [x] Class list with responsibilities
 - [x] Folder/file structure
 - [x] Database schema (tables: packets, anomalies, devices)
 - [x] AI approach (rule-based + Z-score)
 - [x] Sample data examples
 
+**Exit Criteria:**
+- The project structure is approved.
+- The key entities and service boundaries are defined.
+- The first implementation sprint can begin without additional design work.
+- The initial detection rules and sample scenarios are documented.
+
 ---
 
 ### Week 2 — OOP + Events ✅
 
-**Goal:** Build the core classes and wire up the event system.
+**Objective:** Build the core domain objects and the event pipeline that the rest of the system will use.
+
+**Build Plan:**
+1. Create the main data models for packets, anomalies, and devices.
+2. Define the event manager and the callbacks it must support.
+3. Implement the first version of the anomaly detector with rule-based checks.
+4. Add the file logger and connect it to emitted events.
+5. Wire everything together in a simple entry point that processes sample packets.
+6. Verify that a detected anomaly can flow through model → event → logger without manual wiring.
 
 **Deliverables:**
 - [x] `NetworkPacket`, `Anomaly`, `Device` dataclasses
@@ -69,6 +95,12 @@ NetworkAnomalyDetector/
 - [x] `AnomalyDetector` with rule-based checks (DDoS, port scan, unusual size)
 - [x] `FileLogger` with callbacks connected to EventManager
 - [x] `main.py` that creates sample packets and runs detection
+
+**Exit Criteria:**
+- The core models exist and are consistent with the planned schema.
+- Events can be raised and handled through subscriber callbacks.
+- The detector can flag basic anomalies from sample traffic.
+- Logging works end-to-end from event emission.
 
 **Key concepts demonstrated:**
 - `@dataclass` for clean model definitions
@@ -79,7 +111,15 @@ NetworkAnomalyDetector/
 
 ### Week 3 — Simulation + LINQ-style Queries
 
-**Goal:** Build the traffic simulator and implement data analysis methods.
+**Objective:** Generate realistic traffic patterns and add query methods for exploring the packet stream.
+
+**Build Plan:**
+1. Design the traffic simulator inputs, modes, and repeatability controls.
+2. Implement normal traffic generation with a configurable number of source IPs.
+3. Implement attack scenarios for DDoS and port scanning.
+4. Build query methods that summarize packet traffic by IP, protocol, and rate.
+5. Add a suspicious-packet filter that reuses the same rules as the detector.
+6. Validate the simulator by producing packet batches that clearly match each scenario.
 
 **Deliverables:**
 - [ ] `TrafficSimulator` with three modes:
@@ -92,6 +132,11 @@ NetworkAnomalyDetector/
   - `get_suspicious_packets()` — packets matching threshold rules
   - `get_packets_per_second(ip)` — traffic rate for a given IP
 
+**Exit Criteria:**
+- The simulator can produce deterministic test traffic for each scenario.
+- The analyzer can summarize traffic without manual loops in client code.
+- Simulator output is useful for both testing and demonstration.
+
 **Key concepts demonstrated:**
 - List comprehensions and `collections` module as Python LINQ equivalents
 - Parameterised simulation for reproducible test scenarios
@@ -100,7 +145,15 @@ NetworkAnomalyDetector/
 
 ### Week 4 — Database Integration
 
-**Goal:** Persist all data to SQLite using a clean service layer.
+**Objective:** Add persistence so packets, anomalies, and devices can be stored and retrieved from SQLite.
+
+**Build Plan:**
+1. Define the database schema and foreign key relationships.
+2. Implement the database service that creates and manages the tables.
+3. Add methods to save packets, anomalies, and devices.
+4. Add read methods that support the main reporting and inspection use cases.
+5. Connect event callbacks so detected anomalies are saved automatically.
+6. Confirm that database writes happen without leaking persistence logic into detection code.
 
 **Deliverables:**
 - [ ] `DatabaseService` that creates and manages three tables:
@@ -116,6 +169,11 @@ NetworkAnomalyDetector/
   - `get_packets_by_ip(ip)` → list of NetworkPacket objects
 - [ ] `EventManager` callbacks updated to save anomalies automatically
 
+**Exit Criteria:**
+- The schema matches the planned data model.
+- Save and query operations work from the service layer.
+- Detection and storage remain separated concerns.
+
 **Key concepts demonstrated:**
 - `sqlite3` standard library
 - FK relationships between tables
@@ -125,7 +183,15 @@ NetworkAnomalyDetector/
 
 ### Week 5 — Statistical AI Model (Z-Score)
 
-**Goal:** Add the second detection layer using statistical analysis.
+**Objective:** Add statistical anomaly detection so the system can catch gradual or subtle attacks that the rules miss.
+
+**Build Plan:**
+1. Define the packet-count window used for each IP.
+2. Implement rolling mean and standard deviation calculations.
+3. Add Z-score detection to the anomaly detector.
+4. Map Z-score ranges to severity levels.
+5. Compare statistical detections against rule-based detections on the same sample traffic.
+6. Tune thresholds so the second layer adds value rather than duplicating the first.
 
 **Deliverables:**
 - [ ] Z-score calculation per IP over a sliding time window:
@@ -140,6 +206,11 @@ NetworkAnomalyDetector/
   - `|Z| > 8` → Critical
 - [ ] Results compared: what does Z-score catch that rules miss?
 
+**Exit Criteria:**
+- The detector can run both detection layers in one pass.
+- Statistical anomalies are classified with severity.
+- The team can explain what the Z-score layer adds.
+
 **Key concepts demonstrated:**
 - Statistical modelling without external ML libraries
 - Sliding window aggregation
@@ -149,7 +220,15 @@ NetworkAnomalyDetector/
 
 ### Week 6 — Final Integration & Polish
 
-**Goal:** Connect all components into a working end-to-end system.
+**Objective:** Connect all components into a complete working system and prepare it for use and presentation.
+
+**Build Plan:**
+1. Integrate the simulator, analyzer, detector, event manager, logger, and database service.
+2. Build the main execution flow from traffic generation to summary output.
+3. Add a final report that shows the most important results from a run.
+4. Review the code for consistency, naming, and separation of concerns.
+5. Write setup and usage instructions for the finished project.
+6. Do a final end-to-end test using mixed normal and attack traffic.
 
 **Deliverables:**
 - [ ] `main.py` runs a full simulation cycle:
@@ -166,6 +245,16 @@ NetworkAnomalyDetector/
   - Detection method breakdown (rules vs Z-score)
 - [ ] `README.md` with setup and run instructions
 - [ ] Code cleaned up, comments added
+
+**Exit Criteria:**
+- The full pipeline runs without manual intervention.
+- The output demonstrates detection, logging, and persistence together.
+- The project is documented well enough for another person to run it.
+
+**Key concepts demonstrated:**
+- System integration
+- End-to-end validation
+- Developer documentation and cleanup
 
 ---
 
