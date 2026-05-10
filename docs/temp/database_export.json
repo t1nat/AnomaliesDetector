@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-05-10T14:09:54.851390",
+  "exported_at": "2026-05-10T14:16:23.331498",
   "devices": [
     {
       "id": 1,
@@ -8,7 +8,8 @@
       "is_blacklisted": 0,
       "first_seen": "2026-05-10T11:06:55.119790+00:00",
       "last_seen": "2026-05-10T11:06:55.119791+00:00",
-      "packet_count": 1
+      "packet_count": 1,
+      "anomaly_count": 0
     },
     {
       "id": 2,
@@ -17,7 +18,8 @@
       "is_blacklisted": 0,
       "first_seen": "2026-05-10T11:06:55.152031+00:00",
       "last_seen": "2026-05-10T11:06:55.152048+00:00",
-      "packet_count": 1
+      "packet_count": 1,
+      "anomaly_count": 0
     },
     {
       "id": 3,
@@ -26,7 +28,8 @@
       "is_blacklisted": 0,
       "first_seen": "2026-05-10T11:06:55.159981+00:00",
       "last_seen": "2026-05-10T11:06:55.159991+00:00",
-      "packet_count": 1
+      "packet_count": 1,
+      "anomaly_count": 0
     },
     {
       "id": 4,
@@ -35,7 +38,8 @@
       "is_blacklisted": 0,
       "first_seen": "2026-05-10T11:06:55.165889+00:00",
       "last_seen": "2026-05-10T11:06:55.165901+00:00",
-      "packet_count": 1
+      "packet_count": 1,
+      "anomaly_count": 0
     },
     {
       "id": 5,
@@ -44,7 +48,8 @@
       "is_blacklisted": 0,
       "first_seen": "2026-05-10T11:06:55.176057+00:00",
       "last_seen": "2026-05-10T11:06:55.176071+00:00",
-      "packet_count": 1
+      "packet_count": 1,
+      "anomaly_count": 0
     },
     {
       "id": 6,
@@ -53,7 +58,8 @@
       "is_blacklisted": 0,
       "first_seen": "2026-05-10T11:06:55.184256+00:00",
       "last_seen": "2026-05-10T11:06:55.184269+00:00",
-      "packet_count": 1
+      "packet_count": 1,
+      "anomaly_count": 0
     },
     {
       "id": 7,
@@ -62,7 +68,8 @@
       "is_blacklisted": 0,
       "first_seen": "2026-05-10T11:06:55.191623+00:00",
       "last_seen": "2026-05-10T11:06:55.191635+00:00",
-      "packet_count": 1
+      "packet_count": 1,
+      "anomaly_count": 0
     },
     {
       "id": 8,
@@ -70,8 +77,9 @@
       "device_type": "simulated",
       "is_blacklisted": 0,
       "first_seen": "2026-05-10T11:06:55.198440+00:00",
-      "last_seen": "2026-05-10T11:06:55.198451+00:00",
-      "packet_count": 1
+      "last_seen": "2026-05-10T11:15:53.925294+00:00",
+      "packet_count": 128,
+      "anomaly_count": 2
     },
     {
       "id": 9,
@@ -80,7 +88,8 @@
       "is_blacklisted": 0,
       "first_seen": "2026-05-10T11:06:55.206013+00:00",
       "last_seen": "2026-05-10T11:06:55.206023+00:00",
-      "packet_count": 94
+      "packet_count": 94,
+      "anomaly_count": 0
     },
     {
       "id": 10,
@@ -89,7 +98,8 @@
       "is_blacklisted": 0,
       "first_seen": "2026-05-10T11:06:55.211910+00:00",
       "last_seen": "2026-05-10T11:06:55.211917+00:00",
-      "packet_count": 25
+      "packet_count": 25,
+      "anomaly_count": 0
     },
     {
       "id": 11,
@@ -98,7 +108,8 @@
       "is_blacklisted": 0,
       "first_seen": "2026-05-10T11:06:55.219644+00:00",
       "last_seen": "2026-05-10T11:06:55.219657+00:00",
-      "packet_count": 1
+      "packet_count": 1,
+      "anomaly_count": 0
     },
     {
       "id": 12,
@@ -106,8 +117,9 @@
       "device_type": "simulated",
       "is_blacklisted": 0,
       "first_seen": "2026-05-10T11:06:55.225844+00:00",
-      "last_seen": "2026-05-10T11:06:55.225852+00:00",
-      "packet_count": 1
+      "last_seen": "2026-05-10T11:15:53.793123+00:00",
+      "packet_count": 8,
+      "anomaly_count": 0
     },
     {
       "id": 13,
@@ -116,7 +128,8 @@
       "is_blacklisted": 0,
       "first_seen": "2026-05-10T11:06:55.232247+00:00",
       "last_seen": "2026-05-10T11:06:55.232257+00:00",
-      "packet_count": 1
+      "packet_count": 1,
+      "anomaly_count": 0
     },
     {
       "id": 14,
@@ -125,7 +138,118 @@
       "is_blacklisted": 0,
       "first_seen": "2026-05-10T11:06:55.240656+00:00",
       "last_seen": "2026-05-10T11:06:55.240666+00:00",
-      "packet_count": 1
+      "packet_count": 1,
+      "anomaly_count": 0
+    },
+    {
+      "id": 15,
+      "ip_address": "192.168.1.13",
+      "device_type": "simulated",
+      "is_blacklisted": 0,
+      "first_seen": "2026-05-10T11:15:53.340394+00:00",
+      "last_seen": "2026-05-10T11:15:53.750440+00:00",
+      "packet_count": 14,
+      "anomaly_count": 0
+    },
+    {
+      "id": 16,
+      "ip_address": "192.168.1.19",
+      "device_type": "simulated",
+      "is_blacklisted": 0,
+      "first_seen": "2026-05-10T11:15:53.347604+00:00",
+      "last_seen": "2026-05-10T11:15:53.769470+00:00",
+      "packet_count": 11,
+      "anomaly_count": 0
+    },
+    {
+      "id": 17,
+      "ip_address": "192.168.1.18",
+      "device_type": "simulated",
+      "is_blacklisted": 0,
+      "first_seen": "2026-05-10T11:15:53.355097+00:00",
+      "last_seen": "2026-05-10T11:15:53.789298+00:00",
+      "packet_count": 9,
+      "anomaly_count": 0
+    },
+    {
+      "id": 18,
+      "ip_address": "192.168.1.12",
+      "device_type": "simulated",
+      "is_blacklisted": 0,
+      "first_seen": "2026-05-10T11:15:53.362166+00:00",
+      "last_seen": "2026-05-10T11:15:53.755604+00:00",
+      "packet_count": 9,
+      "anomaly_count": 0
+    },
+    {
+      "id": 19,
+      "ip_address": "192.168.1.16",
+      "device_type": "simulated",
+      "is_blacklisted": 0,
+      "first_seen": "2026-05-10T11:15:53.370367+00:00",
+      "last_seen": "2026-05-10T11:15:53.763995+00:00",
+      "packet_count": 7,
+      "anomaly_count": 0
+    },
+    {
+      "id": 20,
+      "ip_address": "192.168.1.11",
+      "device_type": "simulated",
+      "is_blacklisted": 0,
+      "first_seen": "2026-05-10T11:15:53.385190+00:00",
+      "last_seen": "2026-05-10T11:15:53.774555+00:00",
+      "packet_count": 3,
+      "anomaly_count": 0
+    },
+    {
+      "id": 21,
+      "ip_address": "192.168.1.15",
+      "device_type": "simulated",
+      "is_blacklisted": 0,
+      "first_seen": "2026-05-10T11:15:53.391115+00:00",
+      "last_seen": "2026-05-10T11:15:53.595526+00:00",
+      "packet_count": 2,
+      "anomaly_count": 0
+    },
+    {
+      "id": 22,
+      "ip_address": "192.168.1.14",
+      "device_type": "simulated",
+      "is_blacklisted": 0,
+      "first_seen": "2026-05-10T11:15:53.605464+00:00",
+      "last_seen": "2026-05-10T11:15:53.779144+00:00",
+      "packet_count": 4,
+      "anomaly_count": 0
+    },
+    {
+      "id": 23,
+      "ip_address": "192.168.1.17",
+      "device_type": "simulated",
+      "is_blacklisted": 0,
+      "first_seen": "2026-05-10T11:15:53.609633+00:00",
+      "last_seen": "2026-05-10T11:15:53.785125+00:00",
+      "packet_count": 2,
+      "anomaly_count": 0
+    },
+    {
+      "id": 24,
+      "ip_address": "192.168.1.55",
+      "device_type": "simulated",
+      "is_blacklisted": 0,
+      "first_seen": "2026-05-10T11:15:54.584444+00:00",
+      "last_seen": "2026-05-10T11:15:54.584449+00:00",
+      "packet_count": 30,
+      "anomaly_count": 1
+    },
+    {
+      "id": 25,
+      "ip_address": "203.0.113.77",
+      "device_type": "simulated",
+      "is_blacklisted": 0,
+      "first_seen": "2026-05-10T11:15:54.815278+00:00",
+      "last_seen": "2026-05-10T11:15:54.815284+00:00",
+      "packet_count": 1,
+      "anomaly_count": 1
     }
   ],
   "packets": [
@@ -1438,6 +1562,2266 @@
       "port": 8080,
       "timestamp": "2026-05-10T11:06:55.119249+00:00",
       "device_id": 14
+    },
+    {
+      "id": 132,
+      "source_ip": "192.168.1.20",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 627,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.313943+00:00",
+      "device_id": 12
+    },
+    {
+      "id": 133,
+      "source_ip": "192.168.1.13",
+      "dest_ip": "10.0.0.1",
+      "protocol": "ICMP",
+      "size": 273,
+      "port": 53,
+      "timestamp": "2026-05-10T11:15:53.314087+00:00",
+      "device_id": 15
+    },
+    {
+      "id": 134,
+      "source_ip": "192.168.1.19",
+      "dest_ip": "10.0.0.2",
+      "protocol": "TCP",
+      "size": 125,
+      "port": 53,
+      "timestamp": "2026-05-10T11:15:53.314144+00:00",
+      "device_id": 16
+    },
+    {
+      "id": 135,
+      "source_ip": "192.168.1.13",
+      "dest_ip": "10.0.0.1",
+      "protocol": "ICMP",
+      "size": 1296,
+      "port": 53,
+      "timestamp": "2026-05-10T11:15:53.314172+00:00",
+      "device_id": 15
+    },
+    {
+      "id": 136,
+      "source_ip": "192.168.1.18",
+      "dest_ip": "10.0.0.1",
+      "protocol": "ICMP",
+      "size": 1394,
+      "port": 8080,
+      "timestamp": "2026-05-10T11:15:53.314183+00:00",
+      "device_id": 17
+    },
+    {
+      "id": 137,
+      "source_ip": "192.168.1.13",
+      "dest_ip": "10.0.0.2",
+      "protocol": "ICMP",
+      "size": 633,
+      "port": 53,
+      "timestamp": "2026-05-10T11:15:53.314193+00:00",
+      "device_id": 15
+    },
+    {
+      "id": 138,
+      "source_ip": "192.168.1.12",
+      "dest_ip": "10.0.0.3",
+      "protocol": "UDP",
+      "size": 760,
+      "port": 443,
+      "timestamp": "2026-05-10T11:15:53.314201+00:00",
+      "device_id": 18
+    },
+    {
+      "id": 139,
+      "source_ip": "192.168.1.12",
+      "dest_ip": "10.0.0.1",
+      "protocol": "UDP",
+      "size": 273,
+      "port": 53,
+      "timestamp": "2026-05-10T11:15:53.314219+00:00",
+      "device_id": 18
+    },
+    {
+      "id": 140,
+      "source_ip": "192.168.1.16",
+      "dest_ip": "10.0.0.1",
+      "protocol": "UDP",
+      "size": 768,
+      "port": 443,
+      "timestamp": "2026-05-10T11:15:53.314237+00:00",
+      "device_id": 19
+    },
+    {
+      "id": 141,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.3",
+      "protocol": "UDP",
+      "size": 1162,
+      "port": 53,
+      "timestamp": "2026-05-10T11:15:53.314246+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 142,
+      "source_ip": "192.168.1.16",
+      "dest_ip": "10.0.0.1",
+      "protocol": "ICMP",
+      "size": 664,
+      "port": 443,
+      "timestamp": "2026-05-10T11:15:53.314327+00:00",
+      "device_id": 19
+    },
+    {
+      "id": 143,
+      "source_ip": "192.168.1.19",
+      "dest_ip": "10.0.0.1",
+      "protocol": "ICMP",
+      "size": 206,
+      "port": 53,
+      "timestamp": "2026-05-10T11:15:53.314451+00:00",
+      "device_id": 16
+    },
+    {
+      "id": 144,
+      "source_ip": "192.168.1.20",
+      "dest_ip": "10.0.0.1",
+      "protocol": "UDP",
+      "size": 227,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.314485+00:00",
+      "device_id": 12
+    },
+    {
+      "id": 145,
+      "source_ip": "192.168.1.11",
+      "dest_ip": "10.0.0.2",
+      "protocol": "UDP",
+      "size": 992,
+      "port": 443,
+      "timestamp": "2026-05-10T11:15:53.314497+00:00",
+      "device_id": 20
+    },
+    {
+      "id": 146,
+      "source_ip": "192.168.1.12",
+      "dest_ip": "10.0.0.2",
+      "protocol": "UDP",
+      "size": 493,
+      "port": 443,
+      "timestamp": "2026-05-10T11:15:53.314506+00:00",
+      "device_id": 18
+    },
+    {
+      "id": 147,
+      "source_ip": "192.168.1.20",
+      "dest_ip": "10.0.0.3",
+      "protocol": "TCP",
+      "size": 1311,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.314515+00:00",
+      "device_id": 12
+    },
+    {
+      "id": 148,
+      "source_ip": "192.168.1.18",
+      "dest_ip": "10.0.0.3",
+      "protocol": "TCP",
+      "size": 398,
+      "port": 8080,
+      "timestamp": "2026-05-10T11:15:53.314523+00:00",
+      "device_id": 17
+    },
+    {
+      "id": 149,
+      "source_ip": "192.168.1.16",
+      "dest_ip": "10.0.0.2",
+      "protocol": "ICMP",
+      "size": 1473,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.314532+00:00",
+      "device_id": 19
+    },
+    {
+      "id": 150,
+      "source_ip": "192.168.1.20",
+      "dest_ip": "10.0.0.2",
+      "protocol": "TCP",
+      "size": 533,
+      "port": 53,
+      "timestamp": "2026-05-10T11:15:53.314540+00:00",
+      "device_id": 12
+    },
+    {
+      "id": 151,
+      "source_ip": "192.168.1.15",
+      "dest_ip": "10.0.0.2",
+      "protocol": "UDP",
+      "size": 199,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.314548+00:00",
+      "device_id": 21
+    },
+    {
+      "id": 152,
+      "source_ip": "192.168.1.19",
+      "dest_ip": "10.0.0.3",
+      "protocol": "UDP",
+      "size": 499,
+      "port": 8080,
+      "timestamp": "2026-05-10T11:15:53.314556+00:00",
+      "device_id": 16
+    },
+    {
+      "id": 153,
+      "source_ip": "192.168.1.16",
+      "dest_ip": "10.0.0.3",
+      "protocol": "UDP",
+      "size": 356,
+      "port": 443,
+      "timestamp": "2026-05-10T11:15:53.314563+00:00",
+      "device_id": 19
+    },
+    {
+      "id": 154,
+      "source_ip": "192.168.1.12",
+      "dest_ip": "10.0.0.1",
+      "protocol": "ICMP",
+      "size": 1213,
+      "port": 443,
+      "timestamp": "2026-05-10T11:15:53.314571+00:00",
+      "device_id": 18
+    },
+    {
+      "id": 155,
+      "source_ip": "192.168.1.19",
+      "dest_ip": "10.0.0.2",
+      "protocol": "ICMP",
+      "size": 881,
+      "port": 443,
+      "timestamp": "2026-05-10T11:15:53.314578+00:00",
+      "device_id": 16
+    },
+    {
+      "id": 156,
+      "source_ip": "192.168.1.13",
+      "dest_ip": "10.0.0.1",
+      "protocol": "ICMP",
+      "size": 1074,
+      "port": 53,
+      "timestamp": "2026-05-10T11:15:53.314585+00:00",
+      "device_id": 15
+    },
+    {
+      "id": 157,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 1349,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.314613+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 158,
+      "source_ip": "192.168.1.20",
+      "dest_ip": "10.0.0.2",
+      "protocol": "ICMP",
+      "size": 194,
+      "port": 8080,
+      "timestamp": "2026-05-10T11:15:53.314623+00:00",
+      "device_id": 12
+    },
+    {
+      "id": 159,
+      "source_ip": "192.168.1.16",
+      "dest_ip": "10.0.0.3",
+      "protocol": "UDP",
+      "size": 1147,
+      "port": 443,
+      "timestamp": "2026-05-10T11:15:53.314630+00:00",
+      "device_id": 19
+    },
+    {
+      "id": 160,
+      "source_ip": "192.168.1.18",
+      "dest_ip": "10.0.0.1",
+      "protocol": "ICMP",
+      "size": 298,
+      "port": 443,
+      "timestamp": "2026-05-10T11:15:53.314638+00:00",
+      "device_id": 17
+    },
+    {
+      "id": 161,
+      "source_ip": "192.168.1.20",
+      "dest_ip": "10.0.0.2",
+      "protocol": "TCP",
+      "size": 665,
+      "port": 8080,
+      "timestamp": "2026-05-10T11:15:53.314644+00:00",
+      "device_id": 12
+    },
+    {
+      "id": 162,
+      "source_ip": "192.168.1.12",
+      "dest_ip": "10.0.0.2",
+      "protocol": "TCP",
+      "size": 603,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.314652+00:00",
+      "device_id": 18
+    },
+    {
+      "id": 163,
+      "source_ip": "192.168.1.18",
+      "dest_ip": "10.0.0.1",
+      "protocol": "ICMP",
+      "size": 675,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.314660+00:00",
+      "device_id": 17
+    },
+    {
+      "id": 164,
+      "source_ip": "192.168.1.12",
+      "dest_ip": "10.0.0.2",
+      "protocol": "TCP",
+      "size": 1168,
+      "port": 53,
+      "timestamp": "2026-05-10T11:15:53.314667+00:00",
+      "device_id": 18
+    },
+    {
+      "id": 165,
+      "source_ip": "192.168.1.19",
+      "dest_ip": "10.0.0.2",
+      "protocol": "UDP",
+      "size": 103,
+      "port": 53,
+      "timestamp": "2026-05-10T11:15:53.314673+00:00",
+      "device_id": 16
+    },
+    {
+      "id": 166,
+      "source_ip": "192.168.1.15",
+      "dest_ip": "10.0.0.2",
+      "protocol": "TCP",
+      "size": 182,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.314850+00:00",
+      "device_id": 21
+    },
+    {
+      "id": 167,
+      "source_ip": "192.168.1.19",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 1059,
+      "port": 53,
+      "timestamp": "2026-05-10T11:15:53.314874+00:00",
+      "device_id": 16
+    },
+    {
+      "id": 168,
+      "source_ip": "192.168.1.18",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 1415,
+      "port": 8080,
+      "timestamp": "2026-05-10T11:15:53.314883+00:00",
+      "device_id": 17
+    },
+    {
+      "id": 169,
+      "source_ip": "192.168.1.18",
+      "dest_ip": "10.0.0.1",
+      "protocol": "UDP",
+      "size": 1144,
+      "port": 8080,
+      "timestamp": "2026-05-10T11:15:53.314891+00:00",
+      "device_id": 17
+    },
+    {
+      "id": 170,
+      "source_ip": "192.168.1.13",
+      "dest_ip": "10.0.0.3",
+      "protocol": "ICMP",
+      "size": 1476,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.314898+00:00",
+      "device_id": 15
+    },
+    {
+      "id": 171,
+      "source_ip": "192.168.1.14",
+      "dest_ip": "10.0.0.2",
+      "protocol": "ICMP",
+      "size": 1394,
+      "port": 443,
+      "timestamp": "2026-05-10T11:15:53.314905+00:00",
+      "device_id": 22
+    },
+    {
+      "id": 172,
+      "source_ip": "192.168.1.17",
+      "dest_ip": "10.0.0.3",
+      "protocol": "UDP",
+      "size": 311,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.314912+00:00",
+      "device_id": 23
+    },
+    {
+      "id": 173,
+      "source_ip": "192.168.1.13",
+      "dest_ip": "10.0.0.1",
+      "protocol": "UDP",
+      "size": 107,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.314920+00:00",
+      "device_id": 15
+    },
+    {
+      "id": 174,
+      "source_ip": "192.168.1.19",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 209,
+      "port": 53,
+      "timestamp": "2026-05-10T11:15:53.314928+00:00",
+      "device_id": 16
+    },
+    {
+      "id": 175,
+      "source_ip": "192.168.1.13",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 740,
+      "port": 53,
+      "timestamp": "2026-05-10T11:15:53.314936+00:00",
+      "device_id": 15
+    },
+    {
+      "id": 176,
+      "source_ip": "192.168.1.18",
+      "dest_ip": "10.0.0.1",
+      "protocol": "UDP",
+      "size": 1434,
+      "port": 8080,
+      "timestamp": "2026-05-10T11:15:53.314942+00:00",
+      "device_id": 17
+    },
+    {
+      "id": 177,
+      "source_ip": "192.168.1.13",
+      "dest_ip": "10.0.0.3",
+      "protocol": "TCP",
+      "size": 1233,
+      "port": 8080,
+      "timestamp": "2026-05-10T11:15:53.314958+00:00",
+      "device_id": 15
+    },
+    {
+      "id": 178,
+      "source_ip": "192.168.1.13",
+      "dest_ip": "10.0.0.2",
+      "protocol": "UDP",
+      "size": 453,
+      "port": 53,
+      "timestamp": "2026-05-10T11:15:53.314965+00:00",
+      "device_id": 15
+    },
+    {
+      "id": 179,
+      "source_ip": "192.168.1.11",
+      "dest_ip": "10.0.0.3",
+      "protocol": "UDP",
+      "size": 789,
+      "port": 8080,
+      "timestamp": "2026-05-10T11:15:53.314971+00:00",
+      "device_id": 20
+    },
+    {
+      "id": 180,
+      "source_ip": "192.168.1.16",
+      "dest_ip": "10.0.0.2",
+      "protocol": "ICMP",
+      "size": 174,
+      "port": 53,
+      "timestamp": "2026-05-10T11:15:53.314979+00:00",
+      "device_id": 19
+    },
+    {
+      "id": 181,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.2",
+      "protocol": "ICMP",
+      "size": 758,
+      "port": 53,
+      "timestamp": "2026-05-10T11:15:53.314986+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 182,
+      "source_ip": "192.168.1.13",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 1162,
+      "port": 8080,
+      "timestamp": "2026-05-10T11:15:53.315008+00:00",
+      "device_id": 15
+    },
+    {
+      "id": 183,
+      "source_ip": "192.168.1.12",
+      "dest_ip": "10.0.0.2",
+      "protocol": "TCP",
+      "size": 634,
+      "port": 8080,
+      "timestamp": "2026-05-10T11:15:53.315015+00:00",
+      "device_id": 18
+    },
+    {
+      "id": 184,
+      "source_ip": "192.168.1.13",
+      "dest_ip": "10.0.0.1",
+      "protocol": "UDP",
+      "size": 1191,
+      "port": 53,
+      "timestamp": "2026-05-10T11:15:53.315023+00:00",
+      "device_id": 15
+    },
+    {
+      "id": 185,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.3",
+      "protocol": "ICMP",
+      "size": 94,
+      "port": 53,
+      "timestamp": "2026-05-10T11:15:53.315031+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 186,
+      "source_ip": "192.168.1.13",
+      "dest_ip": "10.0.0.1",
+      "protocol": "UDP",
+      "size": 1058,
+      "port": 8080,
+      "timestamp": "2026-05-10T11:15:53.315038+00:00",
+      "device_id": 15
+    },
+    {
+      "id": 187,
+      "source_ip": "192.168.1.13",
+      "dest_ip": "10.0.0.2",
+      "protocol": "TCP",
+      "size": 401,
+      "port": 8080,
+      "timestamp": "2026-05-10T11:15:53.315046+00:00",
+      "device_id": 15
+    },
+    {
+      "id": 188,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.2",
+      "protocol": "UDP",
+      "size": 995,
+      "port": 443,
+      "timestamp": "2026-05-10T11:15:53.315054+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 189,
+      "source_ip": "192.168.1.16",
+      "dest_ip": "10.0.0.3",
+      "protocol": "ICMP",
+      "size": 1202,
+      "port": 8080,
+      "timestamp": "2026-05-10T11:15:53.315063+00:00",
+      "device_id": 19
+    },
+    {
+      "id": 190,
+      "source_ip": "192.168.1.12",
+      "dest_ip": "10.0.0.1",
+      "protocol": "UDP",
+      "size": 509,
+      "port": 53,
+      "timestamp": "2026-05-10T11:15:53.315071+00:00",
+      "device_id": 18
+    },
+    {
+      "id": 191,
+      "source_ip": "192.168.1.19",
+      "dest_ip": "10.0.0.3",
+      "protocol": "ICMP",
+      "size": 188,
+      "port": 443,
+      "timestamp": "2026-05-10T11:15:53.315079+00:00",
+      "device_id": 16
+    },
+    {
+      "id": 192,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "ICMP",
+      "size": 1040,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315087+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 193,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.3",
+      "protocol": "TCP",
+      "size": 444,
+      "port": 53,
+      "timestamp": "2026-05-10T11:15:53.315094+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 194,
+      "source_ip": "192.168.1.19",
+      "dest_ip": "10.0.0.1",
+      "protocol": "ICMP",
+      "size": 545,
+      "port": 8080,
+      "timestamp": "2026-05-10T11:15:53.315100+00:00",
+      "device_id": 16
+    },
+    {
+      "id": 195,
+      "source_ip": "192.168.1.11",
+      "dest_ip": "10.0.0.3",
+      "protocol": "TCP",
+      "size": 1249,
+      "port": 53,
+      "timestamp": "2026-05-10T11:15:53.315107+00:00",
+      "device_id": 20
+    },
+    {
+      "id": 196,
+      "source_ip": "192.168.1.19",
+      "dest_ip": "10.0.0.1",
+      "protocol": "UDP",
+      "size": 1410,
+      "port": 443,
+      "timestamp": "2026-05-10T11:15:53.315114+00:00",
+      "device_id": 16
+    },
+    {
+      "id": 197,
+      "source_ip": "192.168.1.14",
+      "dest_ip": "10.0.0.1",
+      "protocol": "ICMP",
+      "size": 707,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315120+00:00",
+      "device_id": 22
+    },
+    {
+      "id": 198,
+      "source_ip": "192.168.1.14",
+      "dest_ip": "10.0.0.2",
+      "protocol": "TCP",
+      "size": 1439,
+      "port": 443,
+      "timestamp": "2026-05-10T11:15:53.315128+00:00",
+      "device_id": 22
+    },
+    {
+      "id": 199,
+      "source_ip": "192.168.1.17",
+      "dest_ip": "10.0.0.2",
+      "protocol": "TCP",
+      "size": 83,
+      "port": 8080,
+      "timestamp": "2026-05-10T11:15:53.315135+00:00",
+      "device_id": 23
+    },
+    {
+      "id": 200,
+      "source_ip": "192.168.1.19",
+      "dest_ip": "10.0.0.3",
+      "protocol": "TCP",
+      "size": 214,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315142+00:00",
+      "device_id": 16
+    },
+    {
+      "id": 201,
+      "source_ip": "192.168.1.18",
+      "dest_ip": "10.0.0.2",
+      "protocol": "TCP",
+      "size": 778,
+      "port": 53,
+      "timestamp": "2026-05-10T11:15:53.315149+00:00",
+      "device_id": 17
+    },
+    {
+      "id": 202,
+      "source_ip": "192.168.1.13",
+      "dest_ip": "10.0.0.2",
+      "protocol": "UDP",
+      "size": 387,
+      "port": 8080,
+      "timestamp": "2026-05-10T11:15:53.315156+00:00",
+      "device_id": 15
+    },
+    {
+      "id": 203,
+      "source_ip": "192.168.1.18",
+      "dest_ip": "10.0.0.3",
+      "protocol": "UDP",
+      "size": 1316,
+      "port": 53,
+      "timestamp": "2026-05-10T11:15:53.315163+00:00",
+      "device_id": 17
+    },
+    {
+      "id": 204,
+      "source_ip": "192.168.1.20",
+      "dest_ip": "10.0.0.3",
+      "protocol": "UDP",
+      "size": 1422,
+      "port": 53,
+      "timestamp": "2026-05-10T11:15:53.315169+00:00",
+      "device_id": 12
+    },
+    {
+      "id": 205,
+      "source_ip": "192.168.1.12",
+      "dest_ip": "10.0.0.2",
+      "protocol": "TCP",
+      "size": 283,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315176+00:00",
+      "device_id": 18
+    },
+    {
+      "id": 206,
+      "source_ip": "192.168.1.14",
+      "dest_ip": "10.0.0.2",
+      "protocol": "ICMP",
+      "size": 495,
+      "port": 443,
+      "timestamp": "2026-05-10T11:15:53.315182+00:00",
+      "device_id": 22
+    },
+    {
+      "id": 207,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315193+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 208,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315198+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 209,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315201+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 210,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315203+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 211,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315377+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 212,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315392+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 213,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315395+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 214,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315398+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 215,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315400+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 216,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315403+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 217,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315405+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 218,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315408+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 219,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315539+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 220,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315560+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 221,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315563+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 222,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315564+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 223,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315565+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 224,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315567+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 225,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315568+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 226,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315569+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 227,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315570+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 228,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315571+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 229,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315572+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 230,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315573+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 231,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315573+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 232,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315620+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 233,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315625+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 234,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315626+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 235,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315627+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 236,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315628+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 237,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315629+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 238,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315630+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 239,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315631+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 240,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315633+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 241,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315634+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 242,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315635+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 243,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315636+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 244,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315637+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 245,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315637+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 246,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315638+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 247,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315639+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 248,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315641+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 249,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315642+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 250,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315643+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 251,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315644+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 252,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315645+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 253,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315646+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 254,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315647+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 255,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315648+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 256,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315648+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 257,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315649+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 258,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315650+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 259,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315651+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 260,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315654+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 261,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315655+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 262,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315656+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 263,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315658+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 264,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315659+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 265,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315660+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 266,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315661+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 267,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315662+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 268,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315663+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 269,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315664+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 270,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315665+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 271,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315666+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 272,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315675+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 273,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315676+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 274,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315677+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 275,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315678+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 276,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315679+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 277,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315679+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 278,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315680+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 279,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315681+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 280,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315682+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 281,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315683+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 282,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315684+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 283,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315685+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 284,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315692+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 285,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315693+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 286,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315694+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 287,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315694+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 288,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315695+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 289,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315696+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 290,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315697+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 291,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315698+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 292,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315699+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 293,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315700+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 294,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315701+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 295,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315702+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 296,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315703+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 297,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315704+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 298,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315704+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 299,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315705+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 300,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315709+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 301,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315710+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 302,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315711+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 303,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315711+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 304,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315712+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 305,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315720+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 306,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315722+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 307,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315723+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 308,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315724+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 309,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315725+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 310,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315726+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 311,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315727+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 312,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315728+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 313,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315729+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 314,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315730+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 315,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315730+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 316,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315733+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 317,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315734+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 318,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315735+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 319,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315736+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 320,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315737+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 321,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315738+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 322,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315739+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 323,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315740+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 324,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315741+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 325,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315742+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 326,
+      "source_ip": "192.168.1.10",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 512,
+      "port": 80,
+      "timestamp": "2026-05-10T11:15:53.315743+00:00",
+      "device_id": 8
+    },
+    {
+      "id": 327,
+      "source_ip": "192.168.1.55",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 128,
+      "port": 1,
+      "timestamp": "2026-05-10T11:15:53.315752+00:00",
+      "device_id": 24
+    },
+    {
+      "id": 328,
+      "source_ip": "192.168.1.55",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 128,
+      "port": 2,
+      "timestamp": "2026-05-10T11:15:53.315756+00:00",
+      "device_id": 24
+    },
+    {
+      "id": 329,
+      "source_ip": "192.168.1.55",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 128,
+      "port": 3,
+      "timestamp": "2026-05-10T11:15:53.315758+00:00",
+      "device_id": 24
+    },
+    {
+      "id": 330,
+      "source_ip": "192.168.1.55",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 128,
+      "port": 4,
+      "timestamp": "2026-05-10T11:15:53.315759+00:00",
+      "device_id": 24
+    },
+    {
+      "id": 331,
+      "source_ip": "192.168.1.55",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 128,
+      "port": 5,
+      "timestamp": "2026-05-10T11:15:53.315760+00:00",
+      "device_id": 24
+    },
+    {
+      "id": 332,
+      "source_ip": "192.168.1.55",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 128,
+      "port": 6,
+      "timestamp": "2026-05-10T11:15:53.315761+00:00",
+      "device_id": 24
+    },
+    {
+      "id": 333,
+      "source_ip": "192.168.1.55",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 128,
+      "port": 7,
+      "timestamp": "2026-05-10T11:15:53.315762+00:00",
+      "device_id": 24
+    },
+    {
+      "id": 334,
+      "source_ip": "192.168.1.55",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 128,
+      "port": 8,
+      "timestamp": "2026-05-10T11:15:53.315763+00:00",
+      "device_id": 24
+    },
+    {
+      "id": 335,
+      "source_ip": "192.168.1.55",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 128,
+      "port": 9,
+      "timestamp": "2026-05-10T11:15:53.315764+00:00",
+      "device_id": 24
+    },
+    {
+      "id": 336,
+      "source_ip": "192.168.1.55",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 128,
+      "port": 10,
+      "timestamp": "2026-05-10T11:15:53.315766+00:00",
+      "device_id": 24
+    },
+    {
+      "id": 337,
+      "source_ip": "192.168.1.55",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 128,
+      "port": 11,
+      "timestamp": "2026-05-10T11:15:53.315766+00:00",
+      "device_id": 24
+    },
+    {
+      "id": 338,
+      "source_ip": "192.168.1.55",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 128,
+      "port": 12,
+      "timestamp": "2026-05-10T11:15:53.315767+00:00",
+      "device_id": 24
+    },
+    {
+      "id": 339,
+      "source_ip": "192.168.1.55",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 128,
+      "port": 13,
+      "timestamp": "2026-05-10T11:15:53.315768+00:00",
+      "device_id": 24
+    },
+    {
+      "id": 340,
+      "source_ip": "192.168.1.55",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 128,
+      "port": 14,
+      "timestamp": "2026-05-10T11:15:53.315769+00:00",
+      "device_id": 24
+    },
+    {
+      "id": 341,
+      "source_ip": "192.168.1.55",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 128,
+      "port": 15,
+      "timestamp": "2026-05-10T11:15:53.315770+00:00",
+      "device_id": 24
+    },
+    {
+      "id": 342,
+      "source_ip": "192.168.1.55",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 128,
+      "port": 16,
+      "timestamp": "2026-05-10T11:15:53.315771+00:00",
+      "device_id": 24
+    },
+    {
+      "id": 343,
+      "source_ip": "192.168.1.55",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 128,
+      "port": 17,
+      "timestamp": "2026-05-10T11:15:53.315772+00:00",
+      "device_id": 24
+    },
+    {
+      "id": 344,
+      "source_ip": "192.168.1.55",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 128,
+      "port": 18,
+      "timestamp": "2026-05-10T11:15:53.315773+00:00",
+      "device_id": 24
+    },
+    {
+      "id": 345,
+      "source_ip": "192.168.1.55",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 128,
+      "port": 19,
+      "timestamp": "2026-05-10T11:15:53.315774+00:00",
+      "device_id": 24
+    },
+    {
+      "id": 346,
+      "source_ip": "192.168.1.55",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 128,
+      "port": 20,
+      "timestamp": "2026-05-10T11:15:53.315775+00:00",
+      "device_id": 24
+    },
+    {
+      "id": 347,
+      "source_ip": "192.168.1.55",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 128,
+      "port": 21,
+      "timestamp": "2026-05-10T11:15:53.315778+00:00",
+      "device_id": 24
+    },
+    {
+      "id": 348,
+      "source_ip": "192.168.1.55",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 128,
+      "port": 22,
+      "timestamp": "2026-05-10T11:15:53.315779+00:00",
+      "device_id": 24
+    },
+    {
+      "id": 349,
+      "source_ip": "192.168.1.55",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 128,
+      "port": 23,
+      "timestamp": "2026-05-10T11:15:53.315780+00:00",
+      "device_id": 24
+    },
+    {
+      "id": 350,
+      "source_ip": "192.168.1.55",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 128,
+      "port": 24,
+      "timestamp": "2026-05-10T11:15:53.315781+00:00",
+      "device_id": 24
+    },
+    {
+      "id": 351,
+      "source_ip": "192.168.1.55",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 128,
+      "port": 25,
+      "timestamp": "2026-05-10T11:15:53.315782+00:00",
+      "device_id": 24
+    },
+    {
+      "id": 352,
+      "source_ip": "192.168.1.55",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 128,
+      "port": 26,
+      "timestamp": "2026-05-10T11:15:53.315784+00:00",
+      "device_id": 24
+    },
+    {
+      "id": 353,
+      "source_ip": "192.168.1.55",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 128,
+      "port": 27,
+      "timestamp": "2026-05-10T11:15:53.315785+00:00",
+      "device_id": 24
+    },
+    {
+      "id": 354,
+      "source_ip": "192.168.1.55",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 128,
+      "port": 28,
+      "timestamp": "2026-05-10T11:15:53.315786+00:00",
+      "device_id": 24
+    },
+    {
+      "id": 355,
+      "source_ip": "192.168.1.55",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 128,
+      "port": 29,
+      "timestamp": "2026-05-10T11:15:53.315786+00:00",
+      "device_id": 24
+    },
+    {
+      "id": 356,
+      "source_ip": "192.168.1.55",
+      "dest_ip": "10.0.0.1",
+      "protocol": "TCP",
+      "size": 128,
+      "port": 30,
+      "timestamp": "2026-05-10T11:15:53.315787+00:00",
+      "device_id": 24
+    },
+    {
+      "id": 357,
+      "source_ip": "203.0.113.77",
+      "dest_ip": "10.0.0.1",
+      "protocol": "UDP",
+      "size": 66000,
+      "port": 53,
+      "timestamp": "2026-05-10T11:15:53.316058+00:00",
+      "device_id": 25
     }
   ],
   "anomalies": [
@@ -1457,6 +3841,42 @@
       "severity": "High",
       "detected_at": "2026-05-10T11:06:56.223853+00:00",
       "description": "Source IP 10.10.10.2 touched 25 destination ports.",
+      "is_resolved": 0
+    },
+    {
+      "id": 3,
+      "packet_id": 326,
+      "type": "DDoS",
+      "severity": "High",
+      "detected_at": "2026-05-10T11:15:54.543627+00:00",
+      "description": "Source IP 192.168.1.10 generated 120 packets in the sample batch.",
+      "is_resolved": 0
+    },
+    {
+      "id": 4,
+      "packet_id": 326,
+      "type": "ZScoreAnomaly",
+      "severity": "Critical",
+      "detected_at": "2026-05-10T11:15:54.561514+00:00",
+      "description": "Source IP 192.168.1.10 deviated from its baseline with Z-score 94.34.",
+      "is_resolved": 0
+    },
+    {
+      "id": 5,
+      "packet_id": 356,
+      "type": "PortScan",
+      "severity": "High",
+      "detected_at": "2026-05-10T11:15:54.795772+00:00",
+      "description": "Source IP 192.168.1.55 touched 30 destination ports.",
+      "is_resolved": 0
+    },
+    {
+      "id": 6,
+      "packet_id": 357,
+      "type": "UnusualSize",
+      "severity": "Medium",
+      "detected_at": "2026-05-10T11:15:54.839092+00:00",
+      "description": "Packet size 66000 bytes exceeded the unusual size threshold.",
       "is_resolved": 0
     }
   ]
