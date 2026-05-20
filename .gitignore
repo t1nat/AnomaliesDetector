@@ -1,3 +1,21 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+env/
+
+# Logs and temp
+log.txt
+temp/
+/temp/
+
+# IDE files
+.vscode/
+
+# Database exports
+temp/database_export.json
 __pycache__/
 *.pyc
 log.txt
