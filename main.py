@@ -7,6 +7,8 @@ from services import AnomalyDetector, DatabaseService, FileLogger, TrafficAnalyz
 from services.packet_loader import PacketLoader
 from simulation import TrafficSimulator
 from ui.console import STYLE_HEADER, STYLE_INFO, console
+from ui.i18n import set_language, t
+from rich.prompt import Prompt
 from ui.live_feed import LiveDetector
 from ui.menu import run_menu
 from ui.report import show_report
@@ -14,7 +16,11 @@ from rich.panel import Panel
 
 
 def main() -> None:
-    console.print(Panel("[bold bright_green]Network Anomaly Detection System [/]", border_style="bright_green"))
+    if sys.stdin.isatty():
+        lang_choice = Prompt.ask("Language", choices=["en", "bg"], default="en")
+        set_language(lang_choice)
+
+    console.print(Panel(f"[bold bright_green]{t('app.title')} [/]", border_style="bright_green"))
 
     database = DatabaseService()
     event_manager = EventManager()
@@ -61,7 +67,7 @@ def main() -> None:
 
     def process_packets(packets: list[NetworkPacket], title: str) -> None:
         if not packets:
-            console.print("[bold yellow]No packets to process.[/]")
+            console.print(f"[bold yellow]{t('msg.no_packets_to_process')}[/]")
             return
 
         ensure_devices_for_packets(packets)
@@ -73,8 +79,8 @@ def main() -> None:
 
         analyzer = TrafficAnalyzer(packets)
         console.print(f"[bright_white]{title}[/]")
-        console.print(f"[bright_white]Packets processed:[/] {len(packets)}")
-        console.print(f"[bright_white]Top IPs:[/] {analyzer.get_top_ips(3)}")
+        console.print(f"[bright_white]{t('msg.packets_processed')}[/] {len(packets)}")
+        console.print(f"[bright_white]{t('msg.top_ips')}[/] {analyzer.get_top_ips(3)}")
         console.print(f"[bright_white]Protocol counts:[/] {analyzer.group_by_protocol()}")
 
     def run_simulation() -> None:
@@ -87,7 +93,7 @@ def main() -> None:
             [simulator.generate_sample_batch()[-1]],
         ]
 
-        console.print(f"[bold bright_green]Starting simulation — {len(batches)} batches[/]")
+        console.print(f"[bold bright_green]{t('msg.starting_simulation', batches=len(batches))}[/]")
         all_packets: list[NetworkPacket] = []
         all_anomalies = []
 
@@ -100,11 +106,11 @@ def main() -> None:
             all_anomalies.extend(live_detector.run_batch(batch, index, len(batches)))
 
         analyzer = TrafficAnalyzer(all_packets)
-        console.print("[bold bright_green]Simulation complete[/]")
-        console.print(f"[bright_white]Packets processed:[/] {len(all_packets)}")
-        console.print(f"[bright_white]Anomalies detected:[/] {len(all_anomalies)}")
-        console.print(f"[bright_white]Top IPs:[/] {analyzer.get_top_ips(5)}")
-        console.print(f"[bright_white]Suspicious packets:[/] {len(analyzer.get_suspicious_packets())}")
+        console.print(f"[bold bright_green]{t('msg.simulation_complete')}[/]")
+        console.print(f"[bright_white]{t('msg.packets_processed')}[/] {len(all_packets)}")
+        console.print(f"[bright_white]{t('msg.anomalies_detected')}[/] {len(all_anomalies)}")
+        console.print(f"[bright_white]{t('msg.top_ips')}[/] {analyzer.get_top_ips(5)}")
+        console.print(f"[bright_white]{t('msg.suspicious_packets')}[/] {len(analyzer.get_suspicious_packets())}")
 
     def clear_database() -> None:
         database.clear_all()

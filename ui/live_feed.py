@@ -16,6 +16,7 @@ from ui.console import (
     STYLE_WARN,
     console,
 )
+from ui.i18n import t
 
 
 class LiveDetector:
@@ -57,15 +58,15 @@ class LiveDetector:
             ports_by_ip.setdefault(packet.source_ip, set()).add(packet.port)
 
         if any(packet.size > 65_000 for packet in packets):
-            console.print("  [RULE] Size check (> 65 000 B)      [bold yellow]⚠[/]  threshold hit")
+            console.print(t("live.rule.size_check", value=65000, status_tag="[bold yellow]⚠[/]", status_text="threshold hit"))
         else:
-            console.print("  [RULE] Size check (> 65 000 B)      [green]✓[/]  clean")
+            console.print(t("live.rule.size_check", value=65000, status_tag="[green]✓[/]", status_text="clean"))
 
         top_source_ip, top_count = counts.most_common(1)[0]
         if top_count > 100:
-            console.print(f"  [RULE] DDoS check (> 100 pkt/IP)    [bold yellow]⚠[/]  {top_source_ip} → {top_count} packets")
+            console.print(t("live.rule.ddos_check", threshold=100, status_tag="[bold yellow]⚠[/]", ip_info=f"{top_source_ip} → {top_count} packets"))
         else:
-            console.print("  [RULE] DDoS check (> 100 pkt/IP)    [green]✓[/]  clean")
+            console.print(t("live.rule.ddos_check", threshold=100, status_tag="[green]✓[/]", ip_info="clean"))
 
         port_scan_target = None
         for source_ip, port_set in ports_by_ip.items():
@@ -75,36 +76,34 @@ class LiveDetector:
 
         if port_scan_target:
             console.print(
-                f"  [RULE] Port scan (> 20 ports/IP)   [bold yellow]⚠[/]  {port_scan_target[0]} → {port_scan_target[1]} ports"
+                t("live.rule.port_scan", threshold=20, status_tag="[bold yellow]⚠[/]", ip_info=f"{port_scan_target[0]} → {port_scan_target[1]} ports")
             )
         else:
-            console.print("  [RULE] Port scan (> 20 ports/IP)   [green]✓[/]  clean")
+            console.print(t("live.rule.port_scan", threshold=20, status_tag="[green]✓[/]", ip_info="clean"))
 
     def _print_z_score_status(self, packets: list[NetworkPacket], anomalies: list[Anomaly]) -> None:
         counts = Counter(packet.source_ip for packet in packets)
         if not counts:
-            console.print("  [Z-SCORE] Baseline                  [dim white]✓[/]  no packets")
+            console.print(t("live.zscore.no_packets"))
             return
 
         source_ip, current_count = counts.most_common(1)[0]
         history = self._detector._packet_history.get(source_ip, [])
 
         if len(history) < 3:
-            console.print(f"  [Z-SCORE] Baseline                  [dim white]✓[/]  building history ({len(history)}/3)")
+            console.print(t("live.zscore.building", current=len(history), needed=3))
             return
 
         anomaly = next((item for item in anomalies if item.type == "ZScoreAnomaly"), None)
         if anomaly:
-            console.print(f"  [Z-SCORE] Baseline                  [bold red]✗[/]  ANOMALY FIRED  {anomaly.severity}")
+            console.print(t("live.zscore.anomaly", severity=anomaly.severity))
         else:
-            console.print(f"  [Z-SCORE] Baseline                  [green]✓[/]  clean  count={current_count}")
+            console.print(t("live.zscore.clean", count=current_count))
 
     def _print_anomaly_summary(self, anomalies: list[Anomaly]) -> None:
         if not anomalies:
-            console.print("  [green]✓ No anomalies detected[/]")
+            console.print(t("live.no_anomalies"))
             return
 
         for anomaly in anomalies:
-            console.print(
-                f"  [bold red]✗ ANOMALY FIRED[/]  {anomaly.type} | {anomaly.severity} | {anomaly.description}"
-            )
+            console.print(t("live.anomaly_fired_line", type=anomaly.type, severity=anomaly.severity, description=anomaly.description))

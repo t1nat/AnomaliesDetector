@@ -10,6 +10,7 @@ from rich.prompt import Confirm, IntPrompt, Prompt
 
 from services.packet_loader import PacketLoader
 from ui.console import STYLE_HEADER, STYLE_INFO, STYLE_MUTED, STYLE_OK, STYLE_WARN, console
+from ui.i18n import t
 
 
 def run_menu(
@@ -22,23 +23,16 @@ def run_menu(
     while True:
         console.print(
             Panel(
-                "\n".join(
-                    [
-                        "[bold bright_green]Network Anomaly Detection System[/]",
-                        "[bright_white]1[/]  Run simulation (auto)",
-                        "[bright_white]2[/]  Add packet manually (type it)",
-                        "[bright_white]3[/]  Load packets from file (JSON/CSV)",
-                        "[bright_white]4[/]  Show database report",
-                        "[bright_white]5[/]  Clear database",
-                        "[bright_white]6[/]  Exit",
-                    ]
-                ),
+                "\n".join([
+                    f"[bold bright_green]{t('app.title')}[/]",
+                    t('menu.options'),
+                ]),
                 border_style="bright_green",
-                title="[bold bright_green]Menu[/]",
+                title=f"[bold bright_green]{t('menu.title')}[/]",
             )
         )
 
-        choice = Prompt.ask("[bold bright_white]>[/]", choices=["1", "2", "3", "4", "5", "6"], default="1")
+        choice = Prompt.ask(f"[bold bright_white]{t('prompt.choice')}[/]", choices=["1", "2", "3", "4", "5", "6"], default="1")
 
         if choice == "1":
             run_simulation()
@@ -46,35 +40,35 @@ def run_menu(
             packet = _prompt_for_packet()
             process_packets([packet], "manual packet")
         elif choice == "3":
-            file_path = _resolve_data_path(Prompt.ask("File name", default="sample_packets.json"))
+            file_path = _resolve_data_path(Prompt.ask(t('prompt.file_name'), default="sample_packets.json"))
             packets = loader.load_packets(str(file_path))
             if packets:
                 process_packets(packets, f"file: {file_path.name}")
             else:
-                console.print("[bold yellow]No valid packets were loaded.[/]")
+                console.print(f"[bold yellow]{t('msg.no_valid_packets')}[/]")
         elif choice == "4":
             show_report()
         elif choice == "5":
-            if Confirm.ask("Clear all database records?", default=False):
+            if Confirm.ask(t('confirm.clear_db'), default=False):
                 clear_database()
-                console.print("[green]Database cleared.[/]")
+                console.print(f"[green]{t('msg.database_cleared')}[/]")
         elif choice == "6":
-            console.print("[dim white]Exiting...[/]")
+            console.print(f"[dim white]{t('msg.exiting')}[/]")
             break
 
 
 def _prompt_for_packet() -> NetworkPacket:
-    source_ip = _prompt_ip("Source IP")
-    dest_ip = _prompt_ip("Dest IP")
-    protocol = Prompt.ask("Protocol [TCP/UDP/ICMP]", choices=["TCP", "UDP", "ICMP"], default="TCP")
-    size = IntPrompt.ask("Size (bytes)", default=512, show_default=True)
+    source_ip = _prompt_ip(t("prompt.source_ip"))
+    dest_ip = _prompt_ip(t("prompt.dest_ip"))
+    protocol = Prompt.ask(t("prompt.protocol"), choices=["TCP", "UDP", "ICMP"], default="TCP")
+    size = IntPrompt.ask(t("prompt.size"), default=512, show_default=True)
     while size <= 0:
-        console.print("[bold yellow]Size must be greater than 0.[/]")
-        size = IntPrompt.ask("Size (bytes)", default=512, show_default=True)
-    port = IntPrompt.ask("Port", default=80, show_default=True)
+        console.print(f"[bold yellow]{t('err.size_positive')}[/]")
+        size = IntPrompt.ask(t("prompt.size"), default=512, show_default=True)
+    port = IntPrompt.ask(t("prompt.port"), default=80, show_default=True)
     while port < 1 or port > 65_535:
-        console.print("[bold yellow]Port must be between 1 and 65535.[/]")
-        port = IntPrompt.ask("Port", default=80, show_default=True)
+        console.print(f"[bold yellow]{t('err.port_range')}[/]")
+        port = IntPrompt.ask(t("prompt.port"), default=80, show_default=True)
 
     return NetworkPacket(
         source_ip=source_ip,
@@ -92,7 +86,7 @@ def _prompt_ip(label: str) -> str:
             ipaddress.ip_address(value)
             return value
         except ValueError:
-            console.print("[bold yellow]Enter a valid IP address.[/]")
+                console.print(f"[bold yellow]{t('err.invalid_ip')}[/]")
 
 
 def _resolve_data_path(file_name: str) -> Path:

@@ -8,16 +8,17 @@ from rich.text import Text
 
 from services import DatabaseService
 from ui.console import SEVERITY_STYLES, STYLE_INFO, STYLE_MUTED, STYLE_TABLE_H, console
+from ui.i18n import t
 
 
 def show_report(database: DatabaseService) -> None:
-    console.print(Panel("[bold bright_green]Database Report[/]", border_style="bright_green"))
+    console.print(Panel(f"[bold bright_green]{t('report.title')}[/]", border_style="bright_green"))
     console.print(_build_anomaly_table(database))
     console.print(_build_device_table(database))
 
 
 def _build_anomaly_table(database: DatabaseService) -> Table:
-    table = Table(title="Detected Anomalies", header_style=STYLE_TABLE_H)
+    table = Table(title=t("report.anomalies.title"), header_style=STYLE_TABLE_H)
     table.add_column("ID", style=STYLE_INFO)
     table.add_column("Type", style=STYLE_INFO)
     table.add_column("Severity", style=STYLE_INFO)
@@ -27,7 +28,7 @@ def _build_anomaly_table(database: DatabaseService) -> Table:
 
     anomalies = database.get_all_anomalies()
     if not anomalies:
-        table.add_row("-", "-", "-", "-", "-", "No anomalies stored yet")
+        table.add_row("-", "-", "-", "-", "-", t("report.anomalies.none"))
         return table
 
     for anomaly in anomalies:
@@ -44,7 +45,7 @@ def _build_anomaly_table(database: DatabaseService) -> Table:
 
 
 def _build_device_table(database: DatabaseService) -> Table:
-    table = Table(title="Devices", header_style=STYLE_TABLE_H)
+    table = Table(title=t("report.devices.title"), header_style=STYLE_TABLE_H)
     table.add_column("ID", style=STYLE_INFO)
     table.add_column("IP Address", style=STYLE_INFO)
     table.add_column("Device Type", style=STYLE_INFO)
@@ -57,7 +58,7 @@ def _build_device_table(database: DatabaseService) -> Table:
     devices = database.get_all_devices()
 
     if not devices:
-        table.add_row("-", "-", "-", "-", "-", "-", "No devices stored yet", "-")
+        table.add_row("-", "-", "-", "-", "-", "-", t("report.devices.none"), "-")
         return table
 
     for device in devices:
@@ -65,7 +66,7 @@ def _build_device_table(database: DatabaseService) -> Table:
             str(device.id or "-"),
             device.ip_address,
             device.device_type,
-            "yes" if device.is_blacklisted else "no",
+            t("report.yes") if device.is_blacklisted else t("report.no"),
             str(device.packet_count),
             str(device.anomaly_count),
             _format_datetime(device.first_seen),
