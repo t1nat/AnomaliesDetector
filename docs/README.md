@@ -10,6 +10,9 @@ This folder is the project handbook for the Network Anomaly Detection System. St
 - [Implementation Plan](./03-development-plan/implementation-plan.md)
 - [Validation Plan](./04-testing/validation-plan.md)
 - [Operations Runbook](./05-operations/runbook.md)
+- [Manual Data Guide](./manual-data/README.md)
+- [Refactor Plan](./07-refactoring/refactor-plan.md)
+- [Roadmap Index](./06-roadmap-index/README.md)
 - [Roadmap](./roadmap.md)
 
 ## Recommended Reading Order

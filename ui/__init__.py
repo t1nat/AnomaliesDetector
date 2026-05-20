@@ -1,0 +1,12 @@
+from .console import (
+	SEVERITY_STYLES,
+	STYLE_ANOMALY,
+	STYLE_HEADER,
+	STYLE_INFO,
+	STYLE_MUTED,
+	STYLE_OK,
+	STYLE_TABLE_H,
+	STYLE_WARN,
+	console,
+)
+
